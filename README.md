@@ -3,18 +3,17 @@
 Step 1
 
 ```bash
-$ yarn
+yarn
 ```
 
 Step 2
 
 ```bash
-$ cd ./packages/main/
-$ yarn start
+yarn start
 ```
 
 Step 3  
-brower http://localhost:7100/
+open http://localhost:8080/
 
 open console
 
@@ -22,15 +21,13 @@ Step 4
 
 1.  case 1
 
-- Menu switch to `Home`
-- Menu switch to `MainDemo`
-- Menu switch to `Home` We see console print `BasicLayout:afterEach` every once.
+- Menu switch to `home`
+- Menu switch to `main`
+- Menu switch to `home` We see console print `BasicLayout:afterEach` every once.
 
 2.  case 2
 
-- Menu switch to `Sys2Demo1`
+- Menu switch to `qiankuan: xxx`
 - wait seconds and clear console error
-- Menu switch to `Sys2Demo2`
-- Menu switch to `Sys2Demo1` We see console print `BasicLayout:afterEach` every twice
-
-Is here [signle-spa](https://github.com/single-spa/single-spa/blob/master/src/navigation/navigation-events.js#L105) something wrong ?
+- Menu switch to `qiankuan: yyy`
+- Menu switch to `qiankuan: xxx` We see console print `BasicLayout:afterEach` every twice
